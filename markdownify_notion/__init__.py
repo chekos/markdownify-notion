@@ -44,10 +44,6 @@ def markdownify_block(block: dict) -> str:
     _text_objs = _content.get("text", [])
     md_text = ""
     _text_chunks = []
-    if "heading" in _type:
-        n_heading = int(_type.split("_")[-1])
-        md_text = "#" * n_heading
-        _text_chunks.append(md_text)
 
     for element in _text_objs:
         md_text = element["plain_text"].strip()
@@ -62,6 +58,10 @@ def markdownify_block(block: dict) -> str:
             md_text = f"`{md_text}`"
 
         _text_chunks.append(md_text)
+
+    if "heading" in _type:
+        n_heading = int(_type.split("_")[-1])
+        _text_chunks.insert(0, f"{'#' * n_heading}")
 
     if _type == "code":
         _language = _content["language"]

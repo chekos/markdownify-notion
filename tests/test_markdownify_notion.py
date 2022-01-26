@@ -1,5 +1,5 @@
 from markdownify_notion import markdownify_block
-from blocks import PARAGRAPH, BOOKMARK, CODE
+from blocks import PARAGRAPH, BOOKMARK, CODE, HEADING_1, HEADING_2, HEADING_3
 
 
 def test_markdownify_block_paragraph():
@@ -21,3 +21,9 @@ def test_markdownify_block_code():
         markdownify_block(CODE)
         == '```json\n {\n\tid: "123",\n\ttitle: "page 1",\n\tcreated: "2022-01-25T23:15:00.000Z"\n}\n{\n\tid: "124",\n\ttitle: "page 2",\n\tcreated: "2022-01-26T13:18:15.000Z"\n}\n{\n\tid: "125",\n\ttitle: "page 3",\n\tcreated: "2022-01-27T18:37:05.000Z"\n} \n```'
     )
+
+
+def test_markdownify_block_headings():
+    assert markdownify_block(HEADING_1) == "# what i learned"
+    assert markdownify_block(HEADING_2) == "## what i learned"
+    assert markdownify_block(HEADING_3) == "### what i learned"

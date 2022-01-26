@@ -131,3 +131,87 @@ CODE = {
         "language": "json",
     },
 }
+
+HEADING_1 = {
+    "object": "block",
+    "id": "2c708181-7ccf-4e13-b687-b8d0069eac2e",
+    "created_time": "2022-01-25T23:15:00.000Z",
+    "last_edited_time": "2022-01-25T23:15:00.000Z",
+    "has_children": False,
+    "archived": False,
+    "type": "heading_1",
+    "heading_1": {
+        "text": [
+            {
+                "type": "text",
+                "text": {"content": "what i learned", "link": None},
+                "annotations": {
+                    "bold": False,
+                    "italic": False,
+                    "strikethrough": False,
+                    "underline": False,
+                    "code": False,
+                    "color": "default",
+                },
+                "plain_text": "what i learned",
+                "href": None,
+            }
+        ]
+    },
+}
+
+HEADING_2 = {
+    "object": "block",
+    "id": "2c708181-7ccf-4e13-b687-b8d0069eac2e",
+    "created_time": "2022-01-25T23:15:00.000Z",
+    "last_edited_time": "2022-01-25T23:15:00.000Z",
+    "has_children": False,
+    "archived": False,
+    "type": "heading_2",
+    "heading_2": {
+        "text": [
+            {
+                "type": "text",
+                "text": {"content": "what i learned", "link": None},
+                "annotations": {
+                    "bold": False,
+                    "italic": False,
+                    "strikethrough": False,
+                    "underline": False,
+                    "code": False,
+                    "color": "default",
+                },
+                "plain_text": "what i learned",
+                "href": None,
+            }
+        ]
+    },
+}
+
+HEADING_3 = {
+    "object": "block",
+    "id": "2c708181-7ccf-4e13-b687-b8d0069eac2e",
+    "created_time": "2022-01-25T23:15:00.000Z",
+    "last_edited_time": "2022-01-25T23:15:00.000Z",
+    "has_children": False,
+    "archived": False,
+    "type": "heading_3",
+    "heading_3": {
+        "text": [
+            {
+                "type": "text",
+                "text": {"content": "what i learned", "link": None},
+                "annotations": {
+                    "bold": False,
+                    "italic": False,
+                    "strikethrough": False,
+                    "underline": False,
+                    "code": False,
+                    "color": "default",
+                },
+                "plain_text": "what i learned",
+                "href": None,
+            }
+        ]
+    },
+}
