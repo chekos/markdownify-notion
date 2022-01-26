@@ -98,3 +98,36 @@ BOOKMARK = {
         "url": "https://github.com/stedolan/jq/issues/124#issuecomment-17875972",
     },
 }
+
+CODE = {
+    "object": "block",
+    "id": "20a41b65-ba8e-425f-a8b2-65890cf0cf6d",
+    "created_time": "2022-01-26T20:13:00.000Z",
+    "last_edited_time": "2022-01-26T20:16:00.000Z",
+    "has_children": False,
+    "archived": False,
+    "type": "code",
+    "code": {
+        "caption": [],
+        "text": [
+            {
+                "type": "text",
+                "text": {
+                    "content": '{\n\tid: "123",\n\ttitle: "page 1",\n\tcreated: "2022-01-25T23:15:00.000Z"\n}\n{\n\tid: "124",\n\ttitle: "page 2",\n\tcreated: "2022-01-26T13:18:15.000Z"\n}\n{\n\tid: "125",\n\ttitle: "page 3",\n\tcreated: "2022-01-27T18:37:05.000Z"\n}',
+                    "link": None,
+                },
+                "annotations": {
+                    "bold": False,
+                    "italic": False,
+                    "strikethrough": False,
+                    "underline": False,
+                    "code": False,
+                    "color": "default",
+                },
+                "plain_text": '{\n\tid: "123",\n\ttitle: "page 1",\n\tcreated: "2022-01-25T23:15:00.000Z"\n}\n{\n\tid: "124",\n\ttitle: "page 2",\n\tcreated: "2022-01-26T13:18:15.000Z"\n}\n{\n\tid: "125",\n\ttitle: "page 3",\n\tcreated: "2022-01-27T18:37:05.000Z"\n}',
+                "href": None,
+            }
+        ],
+        "language": "json",
+    },
+}
