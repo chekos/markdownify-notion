@@ -1,3 +1,6 @@
+from urllib.parse import urlparse
+
+
 SUPPORTED_BLOCKS = [
     "heading_1",
     "heading_2",
@@ -31,7 +34,9 @@ def markdownify_block(block: dict) -> str:
     
     # Non-text types
     if _type == "bookmark":
-        return f"[Alt text]({_content['url']})"
+        _url = _content['url']
+        _, netloc, path, *_ = urlparse(_url)
+        return f"[{netloc + path}]({_content['url']})"
 
     # Text types
     _text_objs = _content.get("text", [])
