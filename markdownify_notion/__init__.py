@@ -67,5 +67,6 @@ def markdownify_block(block: dict) -> str:
         _language = _content["language"]
         _text_chunks.insert(0, f"```{_language}\n")
         _text_chunks.append("\n```")
+        return "".join(_text_chunks)
 
     return " ".join(_text_chunks)
