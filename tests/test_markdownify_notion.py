@@ -12,7 +12,7 @@ def test_markdownify_block_paragraph():
 def test_markdownify_block_bookmark():
     assert (
         markdownify_block(BOOKMARK)
-        == "[github.com/stedolan/jq/issues/124](https://github.com/stedolan/jq/issues/124#issuecomment-17875972)"
+        == "[github.com/stedolan/jq/issues/124](https://github.com/stedolan/jq/issues/124#issuecomment-17875972)\n"
     )
 
 

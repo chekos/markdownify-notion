@@ -38,7 +38,7 @@ def markdownify_block(block: dict) -> str:
     if _type == "bookmark":
         _url = _content["url"]
         _, netloc, path, *_ = urlparse(_url)
-        return f"[{netloc + path}]({_content['url']})"
+        return f"[{netloc + path}]({_content['url']})\n"
 
     # Text types
     _text_objs = _content.get("text", [])
