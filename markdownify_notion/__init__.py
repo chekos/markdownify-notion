@@ -9,6 +9,7 @@ SUPPORTED_BLOCKS = [
     "bookmark",
     "code",
     "divider",
+    "image",
 ]
 
 
@@ -43,6 +44,13 @@ def markdownify_block(block: dict) -> str:
 
     if _type == "divider":
         return "\n***\n"
+
+    if _type == "image":
+        _hosted_local = _content["type"]
+        _url = _content[_hosted_local]["url"]
+        _, netloc, path, *_ = urlparse(_url)
+        _name = path.split("/")[-1].split(".")[0]
+        return f"\n![{_name}]({_url})\n"
 
     # Text types
     _text_objs = _content.get("text", [])

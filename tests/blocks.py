@@ -217,3 +217,11 @@ HEADING_3 = {
 }
 
 DIVIDER = {"type": "divider", "divider": {}}
+
+IMAGE = {
+    "type": "image",
+    "image": {
+        "type": "external",
+        "external": {"url": "https://website.domain/images/image.png"},
+    },
+}

@@ -1,5 +1,6 @@
 from markdownify_notion import markdownify_block
 from blocks import PARAGRAPH, BOOKMARK, CODE, HEADING_1, HEADING_2, HEADING_3, DIVIDER
+from tests.blocks import IMAGE
 
 
 def test_markdownify_block_paragraph():
@@ -31,3 +32,10 @@ def test_markdownify_block_headings():
 
 def test_markdownify_block_divider():
     assert markdownify_block(DIVIDER) == "\n***\n"
+
+
+def test_markdownify_block_image():
+    assert (
+        markdownify_block(IMAGE)
+        == "\n![image](https://website.domain/images/image.png)\n"
+    )
