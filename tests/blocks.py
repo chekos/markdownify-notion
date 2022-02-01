@@ -215,3 +215,5 @@ HEADING_3 = {
         ]
     },
 }
+
+DIVIDER = {"type": "divider", "divider": {}}

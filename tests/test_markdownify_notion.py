@@ -1,5 +1,5 @@
 from markdownify_notion import markdownify_block
-from blocks import PARAGRAPH, BOOKMARK, CODE, HEADING_1, HEADING_2, HEADING_3
+from blocks import PARAGRAPH, BOOKMARK, CODE, HEADING_1, HEADING_2, HEADING_3, DIVIDER
 
 
 def test_markdownify_block_paragraph():
@@ -27,3 +27,7 @@ def test_markdownify_block_headings():
     assert markdownify_block(HEADING_1) == "# what i learned"
     assert markdownify_block(HEADING_2) == "## what i learned"
     assert markdownify_block(HEADING_3) == "### what i learned"
+
+
+def test_markdownify_block_divider():
+    assert markdownify_block(DIVIDER) == "\n***\n"

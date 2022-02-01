@@ -8,6 +8,7 @@ SUPPORTED_BLOCKS = [
     "paragraph",
     "bookmark",
     "code",
+    "divider",
 ]
 
 
@@ -39,6 +40,9 @@ def markdownify_block(block: dict) -> str:
         _url = _content["url"]
         _, netloc, path, *_ = urlparse(_url)
         return f"[{netloc + path}]({_content['url']})\n"
+
+    if _type == "divider":
+        return "\n***\n"
 
     # Text types
     _text_objs = _content.get("text", [])
