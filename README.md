@@ -21,7 +21,7 @@ Usage instructions go here.
 To contribute to this library, first checkout the code. Then create a new virtual environment:
 
     cd markdownify-notion
-    python -mvenv venv
+    python -m venv venv
     source venv/bin/activate
 
 Or if you are using `pipenv`:
