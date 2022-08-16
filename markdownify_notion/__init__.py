@@ -10,6 +10,8 @@ SUPPORTED_BLOCKS = [
     "code",
     "divider",
     "image",
+    "numbered_list_item",
+    "bulleted_list_item",
 ]
 
 
@@ -80,5 +82,10 @@ def markdownify_block(block: dict) -> str:
         _text_chunks.insert(0, f"```{_language}\n")
         _text_chunks.append("\n```")
         return "".join(_text_chunks)
+
+    if _type == "bulleted_list_item":
+        return "* " + " ".join(_text_chunks)
+    if _type == "numbered_list_item":
+        return "1. " + " ".join(_text_chunks)
 
     return " ".join(_text_chunks)

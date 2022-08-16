@@ -1,6 +1,16 @@
 from markdownify_notion import markdownify_block
-from blocks import PARAGRAPH, BOOKMARK, CODE, HEADING_1, HEADING_2, HEADING_3, DIVIDER
-from tests.blocks import IMAGE
+from blocks import (
+    PARAGRAPH,
+    BOOKMARK,
+    CODE,
+    HEADING_1,
+    HEADING_2,
+    HEADING_3,
+    DIVIDER,
+    IMAGE,
+    BULLETED_LIST,
+    NUMBERED_LIST,
+)
 
 
 def test_markdownify_block_paragraph():
@@ -39,3 +49,11 @@ def test_markdownify_block_image():
         markdownify_block(IMAGE)
         == "\n![image](https://website.domain/images/image.png)\n"
     )
+
+
+def test_markdownify_block_bulleted_list():
+    assert markdownify_block(BULLETED_LIST) == "* other thing"
+
+
+def test_markdownify_block_numbered_list():
+    assert markdownify_block(NUMBERED_LIST) == "1. One thing"

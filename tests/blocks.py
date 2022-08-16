@@ -225,3 +225,61 @@ IMAGE = {
         "external": {"url": "https://website.domain/images/image.png"},
     },
 }
+
+BULLETED_LIST = {
+    "object": "block",
+    "id": "48410ada-5d15-4fa9-bb48-ee11532f850f",
+    "created_time": "2022-08-16T16:34:00.000Z",
+    "last_edited_time": "2022-08-16T16:34:00.000Z",
+    "has_children": False,
+    "archived": False,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+        "color": "default",
+        "text": [
+            {
+                "type": "text",
+                "text": {"content": "other thing", "link": None},
+                "annotations": {
+                    "bold": False,
+                    "italic": False,
+                    "strikethrough": False,
+                    "underline": False,
+                    "code": False,
+                    "color": "default",
+                },
+                "plain_text": "other thing",
+                "href": None,
+            }
+        ],
+    },
+}
+
+NUMBERED_LIST = {
+    "object": "block",
+    "id": "4c51b198-1de1-419b-806b-31737e320f4c",
+    "created_time": "2022-08-14T16:30:00.000Z",
+    "last_edited_time": "2022-08-16T16:34:00.000Z",
+    "has_children": False,
+    "archived": False,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+        "color": "default",
+        "text": [
+            {
+                "type": "text",
+                "text": {"content": "One thing", "link": None},
+                "annotations": {
+                    "bold": False,
+                    "italic": False,
+                    "strikethrough": False,
+                    "underline": False,
+                    "code": False,
+                    "color": "default",
+                },
+                "plain_text": "One thing",
+                "href": None,
+            }
+        ],
+    },
+}
