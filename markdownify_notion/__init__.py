@@ -55,7 +55,7 @@ def markdownify_block(block: dict) -> str:
         return f"\n![{_name}]({_url})\n"
 
     # Text types
-    _text_objs = _content.get("text", [])
+    _text_objs = _content.get("rich_text", [])
     md_text = ""
     _text_chunks = []
 

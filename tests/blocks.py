@@ -7,7 +7,7 @@ PARAGRAPH = {
     "archived": False,
     "type": "paragraph",
     "paragraph": {
-        "text": [
+        "rich_text": [
             {
                 "type": "text",
                 "text": {"content": "I wonder if the ", "link": None},
@@ -109,7 +109,7 @@ CODE = {
     "type": "code",
     "code": {
         "caption": [],
-        "text": [
+        "rich_text": [
             {
                 "type": "text",
                 "text": {
@@ -141,7 +141,7 @@ HEADING_1 = {
     "archived": False,
     "type": "heading_1",
     "heading_1": {
-        "text": [
+        "rich_text": [
             {
                 "type": "text",
                 "text": {"content": "what i learned", "link": None},
@@ -169,7 +169,7 @@ HEADING_2 = {
     "archived": False,
     "type": "heading_2",
     "heading_2": {
-        "text": [
+        "rich_text": [
             {
                 "type": "text",
                 "text": {"content": "what i learned", "link": None},
@@ -197,7 +197,7 @@ HEADING_3 = {
     "archived": False,
     "type": "heading_3",
     "heading_3": {
-        "text": [
+        "rich_text": [
             {
                 "type": "text",
                 "text": {"content": "what i learned", "link": None},
@@ -236,7 +236,7 @@ BULLETED_LIST = {
     "type": "bulleted_list_item",
     "bulleted_list_item": {
         "color": "default",
-        "text": [
+        "rich_text": [
             {
                 "type": "text",
                 "text": {"content": "other thing", "link": None},
@@ -265,7 +265,7 @@ NUMBERED_LIST = {
     "type": "numbered_list_item",
     "numbered_list_item": {
         "color": "default",
-        "text": [
+        "rich_text": [
             {
                 "type": "text",
                 "text": {"content": "One thing", "link": None},
